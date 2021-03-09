@@ -432,6 +432,7 @@ padding-left: 38%;
 
 /*Mise en page des Activités à Marseille*/
 
+
 #activites {
   margin-bottom: 25px;
 }
@@ -573,3 +574,115 @@ ul {
 .liste a:active {
   color: black;
 }
+
+@media all and (min-width: 481px) and (max-width: 1279px) {
+
+  /*header*/
+  nav a {
+  margin:5px;
+  }
+  /* Hébergements */
+  .conteneur-parent.gauche {
+    flex-basis: 94%;
+  }
+  .enfantheber {
+    width: 270px;
+  }
+  .texteheber {
+    width: 100%;
+  }
+  .enfantheber:nth-of-type(1) img {
+    object-position: 1px -50px;
+  }
+  .enfantheber:nth-of-type(2) img {
+    object-position: 1px -51px;
+  }
+  .enfantheber:nth-of-type(3) img {
+    object-position: 1px -48px;
+  }
+  .enfantheber:nth-of-type(4) img {
+    object-position: 1px -92px;
+  }
+  .enfantheber:nth-of-type(5) img {
+    object-position: 1px -43px;
+  }
+  .enfantheber:nth-of-type(6) img {
+    object-position: 0px -191px;
+  }
+  
+  /*Les plus populaires*/
+  .conteneur-parent.droit {
+    margin: auto;
+    margin-top: 40px;
+  }
+  .fas.fa-chart-line {
+    padding-left: 45%;
+    }
+  .enfantpopu {
+    width:280px;
+  }
+  .textepopu {
+    width: 50%;
+  }
+  /*Activités*/
+  .flexdad {
+    display:flex;
+    flex-direction: row!important;
+    height: auto!important;
+  }
+  .flexson {
+    height: 160px!important;
+    margin: 10px!important;
+  }
+  .texteacti {
+    width:100%!important;
+  }
+  .flexson:nth-of-type(1) {
+    flex-basis: 45%!important;
+  }
+  .flexson:nth-of-type(1) img {
+    max-width: 100%!important;
+    object-position: 0px 0px!important;
+  }
+  
+  .flexson:nth-of-type(2) {
+    flex-basis: 45%!important;
+  }
+  .flexson:nth-of-type(2) img {
+    min-width: 109%!important;
+    max-width: auto!important;
+    object-position: 0px -296px!important;
+  }
+  
+  .flexson:nth-of-type(3) {
+    flex-basis: 45%!important;
+  }
+  .flexson:nth-of-type(3) img {
+    max-width: 100%!important;
+    object-position: 0px -23px!important;
+  }
+  
+  .flexson:nth-of-type(4) {
+    flex-basis: 45%!important;
+  }
+  .flexson:nth-of-type(4) img {
+    max-width: 130%!important;
+    object-position: -70px -73px!important;
+  }
+  
+  .flexson:nth-of-type(5) {
+    flex-basis: 45%!important;
+  }
+  .flexson:nth-of-type(5) img {
+    max-width: 100%!important;
+    object-position: 0px 0px!important;
+  }
+  
+  .flexson:nth-of-type(6) {
+    flex-basis: 45%!important;
+  }
+  .flexson:nth-of-type(6) img {
+    max-width: 100%!important;
+    object-position: 0px -28px!important;
+  }
+  }
