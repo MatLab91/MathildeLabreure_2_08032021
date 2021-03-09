@@ -39,54 +39,75 @@ h2 {
   justify-content:space-between;
   height: 40px;
   margin-bottom: 30px;
+  padding-top:30px;
 }
-img {
+.header_responsive img {
   max-width: 35%;
+  padding-left: 10px;
 }
 
 .inscrire {
   font-size: 0.6em;
   margin: 20px 6px 0px 0px;
+  text-decoration:none;
 }
 .inscrire a {
   line-height: 21px;
   font-weight:600;
   outline: none;
   color: #0065FC!important;
-  border-bottom: none;
+  border-bottom: none!important;
+  text-decoration:none;
   }
 .inscrire a:hover {
   border-bottom: none;
   color: #0065FC;
+  text-decoration:none;
   }
 .inscrire a:visited {
     text-decoration: none;
     color: #0065FC;
-    border-bottom: none;
+    border-bottom: none!important;
+    text-decoration:none;
   }
 .inscrire a:focus {
     color: #0065FC;
     border-bottom: none;
+    text-decoration:none;
   }
 .inscrire a:active {
     color: #0065FC;
     border-bottom: none;
+    text-decoration:none;
   }
 
 
 .conteneur_navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  text-align: center;
   font-size: 0.6em;
   margin-top: 40px;
 }
+
+.nav {
+  width:50%;
+}
+.nav.nav_hebergements:active{
+  width:50%;
+  border-bottom: 2px solid grey;
+  padding-bottom: 20px;
+}
+.nav.nav_activites:active{
+  width:50%;
+  border-bottom: 2px solid grey;
+  padding-bottom: 20px;
+}
+
 .nav a {
   color: black;
   outline: none;
   text-decoration: none;
-  border-bottom: 2px solid grey;
-  padding-bottom: 20px;
 }
 .nav a:hover {
   border-bottom: 2px solid #0065FC;
@@ -163,8 +184,17 @@ input[type=text]:focus {
   color: white;
   margin: 0;
   position: relative;
-  left: -17px;
-  top: -1.5px;
+  left: -1em;
+  top: -0.1em;
+}
+
+@media screen and (max-width: 361px)
+{
+.loupe {
+  position: relative;
+  left: 14.5em;
+  top: -2.6em;
+}
 }
 
 /* Mise en page des filtres*/
@@ -224,37 +254,93 @@ input[type=text]:focus {
 }
 
 
-    /*Les plus populaires*/
+  /*Les plus populaires*/
 
-  .titrecontainer {
-    font-size: 0.7em;
+.titrecontainer {
+  font-size: 0.7em;
+}
+.conteneur-parent.droit .titrecontainer {
+  margin-top: 20px;
+  margin-left:15px;
+}
+.fas.fa-chart-line {
+  padding-left: 31%;
+  font-size:0.8em;
   }
-  .conteneur-parent.droit {
-    display:flex;
-    order:1;
-    width:100%;
-    margin-left:0;
-    margin-right:0;
-    margin-top:30px;
-  }
-  .enfantpopu {
-    width: 95%;
-    height: 120px;
-    overflow: hidden;
-    box-shadow: 0px 2px 13px grey;
-    border: 4px solid white;
-    border-radius: 10%;
-    position: relative;
+.conteneur-parent.droit {
+  display: flex;
+  order: 1;
+  width: 106%;
+  margin-left: -25px;
+  margin-right: -17px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+.enfantpopu {
+  width: 90%;
+  height: 120px;
+  overflow: hidden;
+  box-shadow: 0px 2px 13px #F2F2F2;
+  border: 4px solid white;
+  border-radius: 10%;
+  position: relative;
 
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 11px;
-    margin-bottom: 11px;
-  }
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.textepopu {
+  color: black;
+  background-color: white;
+  line-height: 15px;
+  width: 151px;
+  height: 103px;
+  padding: 13px 22px 5px 12px;
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  font-size: 0.4em;
+}
+.textepopu h3 {
+  font-size:1.2em;
+}
+
+.starsratepopu {
+  color: #0065FC;
+  display: inline;
+  font-size: 11px;
+}
+.missingstarspopu {
+  color: #F2F2F2;
+  display: inline;
+  font-size: 11px;
+}
+.marginstar {
+  margin-top:34px;
+}
+
+.enfantpopu:nth-of-type(1) img {
+  max-width: 68%;
+  object-position: -41px -14px;
+}
+.enfantpopu:nth-of-type(2) img {
+  max-width: 58%;
+  object-position: -22px -8px;
+}
+.enfantpopu:nth-of-type(3) img {
+  max-width: 42%;
+  object-position: -1px -27px;
+}
+
 
 
       /*Hébergements à Marseille*/
 
+  .conteneur-parent.droit .titrecontainer {
+    margin-top:25px;
+  }
 
   .conteneur-parent.gauche {
   display: flex;
@@ -271,7 +357,7 @@ input[type=text]:focus {
 }
 .enfantheber {
   width: 100%;
-  height: 180px;
+  height: 184px;
   overflow: hidden;
   box-shadow: 1px 1px 7px grey;
   margin-top: 16px;
@@ -285,13 +371,46 @@ input[type=text]:focus {
   .texteheber {
   color: black;
   background-color: white;
-  line-height: 7px;
+  line-height: 9px;
   width: 100%;
-  height: 30%;
-  padding: 5px 0px 3px 5px;
+  height: 34%;
+  padding: 15px 6px 3px 11px;
   position: absolute;
   bottom: 0;
-  font-size: 0.4em;
+  font-size: 0.45em;
+  }
+  .texteheber h3 {
+    font-size:1.2em;
+  }
+  .texteheber .starsrate {
+    font-size:13px;
+  }
+  .texteheber .missingstars {
+    font-size:13px;
+  }
+
+  .enfantheber img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  .enfantheber:nth-of-type(1) img {
+    object-position: 1px -50px;
+  }
+  .enfantheber:nth-of-type(2) img {
+    object-position: 1px -51px;
+  }
+  .enfantheber:nth-of-type(3) img {
+    object-position: 1px -48px;
+  }
+  .enfantheber:nth-of-type(4) img {
+    object-position: 1px -92px;
+  }
+  .enfantheber:nth-of-type(5) img {
+    object-position: 1px -43px;
+  }
+  .enfantheber:nth-of-type(6) img {
+    object-position: 0px -191px;
   }
 
     /*Activités*/
@@ -316,7 +435,7 @@ input[type=text]:focus {
     border-radius: 10%;
     width: 100%;
     height: 180px;
-    box-shadow: 0px 2px 2px grey;
+    box-shadow: 0px 2px 2px #F2F2F2;
     overflow: hidden;
     position: relative;
   }   
@@ -342,8 +461,8 @@ input[type=text]:focus {
     margin-bottom: 24px;
   }
   .flexson:nth-of-type(1) img {
-    max-width: 203%;
-    object-position: -104px 0px;
+    max-width: 100%;
+    object-position: 0px 0px;
   }
   
   .flexson:nth-of-type(2) {
@@ -351,8 +470,8 @@ input[type=text]:focus {
     margin-bottom: 24px;
   }
   .flexson:nth-of-type(2) img {
-    max-width: 105%;
-    object-position: -4px -66px;
+    max-width: 100%;
+    object-position: -4px -166px;
   }
   
   .flexson:nth-of-type(3) {
@@ -360,8 +479,8 @@ input[type=text]:focus {
     margin-bottom: 24px;
   }
   .flexson:nth-of-type(3) img {
-    max-width: 103%;
-    object-position: -4px -13px;
+    max-width: 100%;
+    object-position: -4px -23px;
   }
   
   .flexson:nth-of-type(4) {
@@ -369,8 +488,8 @@ input[type=text]:focus {
     margin-bottom: 24px;
   }
   .flexson:nth-of-type(4) img {
-    max-width: 203%;
-    object-position: -104px 0px;
+    max-width: 130%;
+    object-position: -64px ​-70px;
   }
   
   .flexson:nth-of-type(5) {
@@ -388,7 +507,7 @@ input[type=text]:focus {
   }
   .flexson:nth-of-type(6) img {
     max-width: 100%;
-    object-position: 0px 0px;
+    object-position: 0px -32px;
   }
   
 .afficher {
