@@ -22,18 +22,13 @@ h1 {
 h2 {
   font-weight: 600;
   font-size: 14px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+
 }
 h3 {
   font-weight:600;
   font-size: 12px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-top:0.5px;
+  padding-top:0.2px;
 }
 
 /*Mise en page header logo+nav*/
@@ -153,7 +148,6 @@ input[type=text] {
   margin: 0;
   font-family: 'Raleway';
   font-weight: 600;
-  text-align: revert;
   color: black;
 }
 
@@ -175,7 +169,12 @@ input[type=submit] {
   background: #0065FC;
   color: white;
   margin: 0;
-  position: absolute;
+  position: relative;
+  left: -3px;
+  top: -1px;
+}
+.loupe {
+  display:none;
 }
 
 /* Mise en page des filtres*/
@@ -260,16 +259,12 @@ input[type=submit] {
   width:100%;
   margin-bottom: 25px;
 }
-.fas.fa-chart-line {
-  vertical-align: right;
-  font-size: 16px;
-}
 
 .afficher {
   display: block;
   width:100%;
   font-weight: 600;
-  font-style:black;
+  color:black;
   margin-top:30px;
 }
 .afficher a {
@@ -362,6 +357,7 @@ input[type=submit] {
 
 .fas.fa-chart-line {
 padding-left: 38%;
+font-size: 16px;
 }
 
 .enfantpopu {
@@ -389,10 +385,6 @@ padding-left: 38%;
 }
 .textepopu p {
   display: block;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.4em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .starsratepopu {
@@ -407,7 +399,7 @@ padding-left: 38%;
   font-size: 7px;
 }
 .marginstar {
-  margin-top:17px;
+  margin-top:8px;
 }
 
 
@@ -459,7 +451,7 @@ padding-left: 38%;
   background-color: white;
   font-size: 10px;
   width:231px;
-  padding: 11px 0px 11px 10px;
+  padding: 11px 0px 5px 10px;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -649,11 +641,9 @@ ul {
     flex-basis: 45%!important;
   }
   .flexson:nth-of-type(2) img {
-    min-width: 109%!important;
-    max-width: auto!important;
-    object-position: 0px -296px!important;
-  }
-  
+    max-width: 100%!important;
+    object-position: 0px -186px!important;
+}  
   .flexson:nth-of-type(3) {
     flex-basis: 45%!important;
   }
@@ -684,5 +674,11 @@ ul {
   .flexson:nth-of-type(6) img {
     max-width: 100%!important;
     object-position: 0px -28px!important;
+  }
+  }
+@media all and (min-width: 1023px) and (max-width: 1279px) {
+  .flexson:nth-of-type(2) img {
+    min-width: 100%!important;
+    object-position: -2px -246px!important;
   }
   }

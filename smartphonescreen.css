@@ -16,8 +16,6 @@ h1 {
   font-weight:600;
   margin-top: 50px;
   line-height: 26px;
-  margin-block-start: 1.7em;
-  margin-block-end: 0.5em;
 }
 h2 {
     font-weight: 600;
@@ -51,6 +49,15 @@ h2 {
   margin: 20px 6px 0px 0px;
   text-decoration:none;
 }
+
+@media all and (max-width: 360px)
+{
+.inscrire {
+  position: relative;
+  top: -7px;
+}
+}
+
 .inscrire a {
   line-height: 21px;
   font-weight:600;
@@ -82,49 +89,51 @@ h2 {
   }
 
 
-.conteneur_navigation {
+
+.nav_responsive {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  justify-content: space-around;
   font-size: 0.6em;
   margin-top: 40px;
 }
-
-.nav {
-  width:50%;
-}
 .nav.nav_hebergements:active{
-  width:50%;
-  border-bottom: 2px solid grey;
-  padding-bottom: 20px;
+  border-top: none;
+  border-bottom: 2px solid grey!important;
+  padding-bottom: 20px!important;
 }
 .nav.nav_activites:active{
-  width:50%;
-  border-bottom: 2px solid grey;
-  padding-bottom: 20px;
+  border-top: none;
+  border-bottom: 2px solid grey!important;
+  padding-bottom: 20px!important;
 }
 
 .nav a {
-  color: black;
-  outline: none;
-  text-decoration: none;
+  border-top: none;
+  color: black!important;
+  outline: none!important;
+  text-decoration: none!important;
 }
 .nav a:hover {
-  border-bottom: 2px solid #0065FC;
-  padding-bottom: 20px;
-  color: #0065FC;
+  border-top: none;
+  border-bottom: 2px solid #0065FC!important;
+  padding-bottom: 20px!important;
+  color: #0065FC!important;
 }
 .nav a:visited {
-  text-decoration: none;
-  color: #0065FC;
+  border-top: none;
+  text-decoration: none!important;
+  color: #0065FC!important;
 }
 .nav a:focus {
-  color: #0065FC;
+  border-top: none;
+  color: #0065FC!important;
 }
 .nav a:active {
-  border-bottom: 2px solid #0065FC;
-  padding-bottom: 20px;
-  color: #0065FC;
+  border-top: none;
+  border-bottom: 2px solid #0065FC!important;
+  padding-bottom: 20px!important;
+  color: #0065FC!important;
 }
 
 /*Main*/
@@ -133,10 +142,6 @@ h2 {
 #nature {
   font-size: 16px;
   display: block;
-  margin-block-start: 0em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .form {
@@ -160,7 +165,6 @@ input[type=text] {
   font-family: 'Raleway';
   font-size: 0.6em;
   font-weight: 600;
-  text-align: revert;
   color: black;
 }
 
@@ -173,6 +177,7 @@ input[type=text]:focus {
 }
 
 .loupe {
+  display:inline-block;
   padding: 12px 14px 12px 14px;
   border: 0;
   cursor: pointer;
@@ -188,12 +193,38 @@ input[type=text]:focus {
   top: -0.1em;
 }
 
-@media screen and (max-width: 361px)
+@media screen and (max-width: 320px)
 {
 .loupe {
   position: relative;
   left: 14.5em;
   top: -2.6em;
+}
+}
+@media all and (min-width: 321px) and (max-width: 361px)
+{
+.loupe {
+  position: relative;
+  left: 15.9em;
+  top: -2.6em;
+}
+}
+@media all and (min-width: 362px) and (max-width: 374px)
+{
+.loupe {
+  padding: 12px 14px 12px 14px;
+  position: relative;
+  left: 16.5em;
+  top: -2.65em;
+}
+}
+@media all and (min-width: 375px) and (max-width: 400px)
+{
+.loupe {
+  padding: 12px 14px 12px 14px;
+  position: relative;
+  left: -1em;
+  top: -0.05em;
 }
 }
 
@@ -295,7 +326,7 @@ input[type=text]:focus {
   color: black;
   background-color: white;
   line-height: 15px;
-  width: 151px;
+  width: 165px;
   height: 103px;
   padding: 13px 22px 5px 12px;
   position: absolute;
@@ -305,6 +336,23 @@ input[type=text]:focus {
 }
 .textepopu h3 {
   font-size:1.2em;
+}
+@media screen and (max-width: 320px)
+{
+.fas.fa-chart-line {
+  padding-left: 22%;
+  font-size:0.8em;
+  }
+.textepopu {
+  width: 145px;
+}
+.enfantpopu:nth-of-type(1) img {
+  max-width: 78%!important;
+}
+.enfantpopu:nth-of-type(2) img {
+  max-width: 68%!important;
+  object-position: -52px -13px!important;
+}
 }
 
 .starsratepopu {
@@ -318,7 +366,7 @@ input[type=text]:focus {
   font-size: 11px;
 }
 .marginstar {
-  margin-top:34px;
+  margin-top:25px;
 }
 
 .enfantpopu:nth-of-type(1) img {
@@ -443,7 +491,7 @@ input[type=text]:focus {
     color: black;
     background-color: white;
     width:100%;
-    padding: 11px 0px 11px 15px;
+    padding: 11px 0px 0px 15px;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -489,7 +537,7 @@ input[type=text]:focus {
   }
   .flexson:nth-of-type(4) img {
     max-width: 130%;
-    object-position: -64px ​-70px;
+    object-position: -97px -110px;
   }
   
   .flexson:nth-of-type(5) {
@@ -526,7 +574,6 @@ input[type=text]:focus {
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
-}
 }
 
 
