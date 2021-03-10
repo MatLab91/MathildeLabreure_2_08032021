@@ -22,19 +22,19 @@ h1 {
 h2 {
   font-weight: 600;
   font-size: 14px;
-
 }
+
 h3 {
-  font-weight:600;
+  font-weight: 600;
   font-size: 12px;
-  margin-top:0.5px;
-  padding-top:0.2px;
+  margin-top: 0.5px;
+  padding-top: 0.2px;
 }
 
 /*Mise en page header logo+nav*/
 
 .header_responsive {
-  display:none;
+  display: none;
 }
 
 header {
@@ -83,55 +83,62 @@ nav a {
   line-height: 21px;
   outline: none;
   text-decoration: none;
-  color:black;
+  color: black;
 }
+
 nav a:hover {
   border-top: 2px solid #0065FC;
   border-bottom: none!important;
   padding-top: 50px;
   color: #0065FC;
 }
+
 nav a:visited {
   text-decoration: none;
   color: black;
 }
+
 nav a:focus {
   color: #0065FC;
 }
+
 nav a:active {
   color: #0065FC;
 }
 
-
 .inscrire a {
   line-height: 21px;
-  font-weight:600;
+  font-weight: 600;
   outline: none;
   color: #0065FC!important;
 }
+
 .inscrire a:hover {
   border-top: 2px solid #0065FC;
   border-bottom: none;
   padding-top: 50px;
   color: #0065FC;
 }
+
 .inscrire a:visited {
   text-decoration: none;
   color: #0065FC;
 }
+
 .inscrire a:focus {
   color: #0065FC;
 }
+
 .inscrire a:active {
   color: #0065FC;
 }
 
-
 /* Mise en page de la fonction recherche*/
 
 .form {
-  position:relative;
+  position: relative;
 }
+
 .fas.fa-map-marker-alt {
   border-color: #F2F2F2;
   border-radius: 11px 0px 0px 11px;
@@ -156,8 +163,9 @@ input[type=text]:focus {
 }
 
 .fa-search {
-  display:none;
+  display: none;
 }
+
 input[type=submit] {
   padding: 11px 12px 11px 12px;
   border: 0;
@@ -173,8 +181,9 @@ input[type=submit] {
   left: -3px;
   top: -1px;
 }
+
 .loupe {
-  display:none;
+  display: none;
 }
 
 /* Mise en page des filtres*/
@@ -199,9 +208,11 @@ input[type=submit] {
   margin: 4px 8px;
   position: relative;
 }
+
 .bouton:hover {
   box-shadow: 0px 1px 5px grey;
 }
+
 .bouton i {
   color: #0065FC;
   background-color: #DEEBFF;
@@ -256,32 +267,37 @@ input[type=submit] {
 
 .titrecontainer {
   display: block;
-  width:100%;
+  width: 100%;
   margin-bottom: 25px;
 }
 
 .afficher {
   display: block;
-  width:100%;
+  width: 100%;
   font-weight: 600;
-  color:black;
-  margin-top:30px;
+  color: black;
+  margin-top: 30px;
 }
+
 .afficher a {
   outline: none;
   text-decoration: none;
   color: black;
 }
+
 .afficher a:visited {
   text-decoration: none;
   color: black;
 }
+
 .afficher a:focus {
   text-decoration: none;
 }
+
 .afficher a:hover {
   border-bottom: 0.5px solid;
 }
+
 .afficher a:active {
   color: black;
 }
@@ -356,8 +372,8 @@ input[type=submit] {
 /*Images et textes des boîtes Les plus populaires*/
 
 .fas.fa-chart-line {
-padding-left: 38%;
-font-size: 16px;
+  padding-left: 38%;
+  font-size: 16px;
 }
 
 .enfantpopu {
@@ -383,6 +399,7 @@ font-size: 16px;
   right: 0px;
   font-size: 10px;
 }
+
 .textepopu p {
   display: block;
 }
@@ -398,10 +415,10 @@ font-size: 16px;
   display: inline;
   font-size: 7px;
 }
-.marginstar {
-  margin-top:8px;
-}
 
+.marginstar {
+  margin-top: 8px;
+}
 
 .enfantpopu img {
   object-fit: contain;
@@ -424,18 +441,17 @@ font-size: 16px;
 
 /*Mise en page des Activités à Marseille*/
 
-
 #activites {
   margin-bottom: 25px;
 }
+
 .flexdad {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
-
   height: 300px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .flexson {
@@ -450,7 +466,7 @@ font-size: 16px;
   color: black;
   background-color: white;
   font-size: 10px;
-  width:231px;
+  width: 231px;
   padding: 11px 0px 5px 10px;
   position: absolute;
   bottom: 0px;
@@ -465,6 +481,7 @@ font-size: 16px;
 .flexson:nth-of-type(1) {
   flex-basis: 99%;
 }
+
 .flexson:nth-of-type(1) img {
   max-width: 203%;
   object-position: -104px 0px;
@@ -474,6 +491,7 @@ font-size: 16px;
   flex-basis: 52%;
   margin-bottom: 24px;
 }
+
 .flexson:nth-of-type(2) img {
   max-width: 105%;
   object-position: -4px -66px;
@@ -482,6 +500,7 @@ font-size: 16px;
 .flexson:nth-of-type(3) {
   flex-basis: 37%;
 }
+
 .flexson:nth-of-type(3) img {
   max-width: 103%;
   object-position: -4px -13px;
@@ -490,6 +509,7 @@ font-size: 16px;
 .flexson:nth-of-type(4) {
   flex-basis: 99%;
 }
+
 .flexson:nth-of-type(4) img {
   max-width: 203%;
   object-position: -104px 0px;
@@ -499,6 +519,7 @@ font-size: 16px;
   flex-basis: 44%;
   margin-bottom: 26px;
 }
+
 .flexson:nth-of-type(5) img {
   max-width: 100%;
   object-position: 0px 0px;
@@ -507,11 +528,11 @@ font-size: 16px;
 .flexson:nth-of-type(6) {
   flex-basis: 44%;
 }
+
 .flexson:nth-of-type(6) img {
   max-width: 100%;
   object-position: 0px 0px;
 }
-
 
 /*Mise en page footer*/
 
@@ -567,11 +588,12 @@ ul {
   color: black;
 }
 
-@media all and (min-width: 481px) and (max-width: 1279px) {
+/*Responsive pour tablettes*/
 
+@media all and (min-width: 481px) and (max-width: 1279px) {
   /*header*/
   nav a {
-  margin:5px;
+    margin: 5px;
   }
   /* Hébergements */
   .conteneur-parent.gauche {
@@ -601,7 +623,6 @@ ul {
   .enfantheber:nth-of-type(6) img {
     object-position: 0px -191px;
   }
-  
   /*Les plus populaires*/
   .conteneur-parent.droit {
     margin: auto;
@@ -609,16 +630,16 @@ ul {
   }
   .fas.fa-chart-line {
     padding-left: 45%;
-    }
+  }
   .enfantpopu {
-    width:280px;
+    width: 280px;
   }
   .textepopu {
     width: 50%;
   }
   /*Activités*/
   .flexdad {
-    display:flex;
+    display: flex;
     flex-direction: row!important;
     height: auto!important;
   }
@@ -627,7 +648,7 @@ ul {
     margin: 10px!important;
   }
   .texteacti {
-    width:100%!important;
+    width: 100%!important;
   }
   .flexson:nth-of-type(1) {
     flex-basis: 45%!important;
@@ -636,14 +657,13 @@ ul {
     max-width: 100%!important;
     object-position: 0px 0px!important;
   }
-  
   .flexson:nth-of-type(2) {
     flex-basis: 45%!important;
   }
   .flexson:nth-of-type(2) img {
     max-width: 100%!important;
     object-position: 0px -186px!important;
-}  
+  }
   .flexson:nth-of-type(3) {
     flex-basis: 45%!important;
   }
@@ -651,7 +671,6 @@ ul {
     max-width: 100%!important;
     object-position: 0px -23px!important;
   }
-  
   .flexson:nth-of-type(4) {
     flex-basis: 45%!important;
   }
@@ -659,7 +678,6 @@ ul {
     max-width: 130%!important;
     object-position: -70px -73px!important;
   }
-  
   .flexson:nth-of-type(5) {
     flex-basis: 45%!important;
   }
@@ -667,7 +685,6 @@ ul {
     max-width: 100%!important;
     object-position: 0px 0px!important;
   }
-  
   .flexson:nth-of-type(6) {
     flex-basis: 45%!important;
   }
@@ -675,10 +692,11 @@ ul {
     max-width: 100%!important;
     object-position: 0px -28px!important;
   }
-  }
+}
+
 @media all and (min-width: 1023px) and (max-width: 1279px) {
   .flexson:nth-of-type(2) img {
     min-width: 100%!important;
     object-position: -2px -246px!important;
   }
-  }
+}
