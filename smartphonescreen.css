@@ -46,6 +46,7 @@
       top: -7px;
     }
   }
+
   .inscrire a {
     line-height: 21px;
     font-weight: 600;
@@ -107,7 +108,7 @@
   .nav a:visited {
     border-top: none;
     text-decoration: none!important;
-    color: #0065FC!important;
+    color: black;
   }
   .nav a:focus {
     border-top: none;
@@ -350,13 +351,15 @@
     display: flex;
     order: 2;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-basis: 100%;
     width: 100%;
     background-color: white;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 3%;
+    padding-left: auto;
+    padding-right: auto;
   }
   .enfantheber {
     width: 100%;
@@ -448,7 +451,6 @@
     font-size: 1.4em;
   }
   .flexson img {
-    max-width: 100%;
     object-fit: contain;
   }
   .flexson:nth-of-type(1) {
@@ -502,6 +504,7 @@
   .afficher {
     font-size: 0.6em;
   }
+
   /*Footer*/
   .pied {
     font-size: 0.5em;
