@@ -14,35 +14,19 @@
     <body>
 
 		<!-- Menue de navigation & Header Desktop-->
-    	<header class="header_desktop">
+    	<header>
     		<div class="flex-parent">
     			<div class="flex-child logo">
     				<img src="images/logo/Reservia@3x.png" alt="logo"/>
     			</div>
 
     			<nav class="flex-child flex-parent">
-    				<div class="flex-child"><a href="#hebergements">Hébergements</a></div>
-    				<div class="flex-child "><a href="#activites">Activités</a></div>
+    				<div class="flex-child nav_hebergements"><a href="#hebergements">Hébergements</a></div>
+    				<div class="flex-child nav_activites"><a href="#activites">Activités</a></div>
     				<div class="flex-child inscrire"><a href="#">S'inscrire</a></div>
     			</nav>
     		</div>
     	</header>
-
-		<!-- Menue de navigation & Header responsive-->
-		<div class="header_responsive">
-
-			<div class="conteneur_logo">
-				<div class="logo_reservia"><img src="images/logo/Reservia@3x.png" alt="logo"/></div>
-				<div class="inscrire"><a href="#">S'inscrire</a></div>
-			</div>
-			
-			<nav class="nav_responsive">
-					<div class="nav nav_hebergements"><a href="#hebergements">Hébergements</a></div>
-					<div class="nav nav_activites"><a href="#activites">Activités</a></div>
-			</nav>
-
-			
-		</div>
 
 
 		<div class="middle">
@@ -55,9 +39,9 @@
     		<form>
     			<i class="fas fa-map-marker-alt"></i>
     			<input type="text" placeholder="Destination"/>
-				<input type="submit" value="Rechercher" id='rechercher'/>
-				<button type="submit" class="loupe">
+				<button type="submit">
 					<i class="fas fa-search"></i>
+					<span>Rechercher</span>
 				</button>
 
 				<p><span id="filtres">Filtres</span>

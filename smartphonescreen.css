@@ -1,11 +1,14 @@
 @media all and (max-width: 480px) {
   /* Valable pour toute la page*/
+  header {
+    margin-right:0;
+    margin-left:0;
+  }
   body {
     font-family: 'Raleway', sans-serif, Verdana;
     font-weight: 200;
     font-style: normal;
     font-size: 31px;
-    margin: 0;
   }
   h1 {
     font-size: 25px;
@@ -16,28 +19,83 @@
   h2 {
     font-weight: 600;
   }
-  /*Header*/
-  .header_desktop {
-    display: none;
-  }
-  .header_responsive {
+
+
+  /*Header + menu de navigation*/
+  .flex-parent {
     display: block;
   }
-  .conteneur_logo {
+  .flex-child.logo {
+    position: relative;
+    top: 20px;
+    left: 8px;
+    max-width: 40%;
+  }
+  .flex-child.flex-parent {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 40px;
-    margin-bottom: 30px;
-    padding-top: 30px;
+    justify-content: space-around;
+    font-size: 0.57em;
+    margin-top: 8%;
   }
-  .header_responsive img {
-    max-width: 35%;
-    padding-left: 10px;
+  .nav_hebergements, .nav_activites {
+    width: 50%;
+    padding: 23px 0;
+  }
+  .nav_hebergements:hover {
+    border-top: none!important;
+    border-bottom: 2px solid #0065FC!important;
+    padding-bottom: 25px!important;
+    color: #0065FC!important;
+  }
+  .nav_activites:hover {
+    border-top: none!important;
+    border-bottom: 2px solid #0065FC!important;
+    padding-bottom: 25px!important;
+    color: #0065FC!important;
+  }
+  .nav_hebergements:active {
+    border-top: none!important;
+    border-bottom: 2px solid #0065FC!important;
+    padding-bottom: 25px!important;
+  }
+  .nav_activites:active {
+    border-top: none!important;
+    border-bottom: 2px solid #0065FC!important;
+    padding-bottom: 25px!important;
+  }
+  .nav_hebergements:visited {
+    border-top: none!important;
+    text-decoration: none!important;
+    color: #0065FC!important;
+  }
+  .nav_activites:visited {
+    border-top: none!important;
+    text-decoration: none!important;
+    color: #0065FC!important;
+  }
+  .nav_hebergements:focus {
+    border-top: none!important;
+    color: #0065FC!important;
+  }
+  .nav_activites:focus {
+    border-top: none!important;
+    color: #0065FC!important;
+  }
+
+
+/*Customization de Inscrire*/
+
+
+  .flex-child.flex-parent .inscrire {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 1em;
   }
   .inscrire {
     font-size: 0.6em;
-    margin: 20px 6px 0px 0px;
+    margin: 30px 6px 0px 0px;
     text-decoration: none;
   }
   @media all and (max-width: 360px) {
@@ -46,7 +104,6 @@
       top: -7px;
     }
   }
-
   .inscrire a {
     line-height: 21px;
     font-weight: 600;
@@ -76,50 +133,13 @@
     border-bottom: none;
     text-decoration: none;
   }
-  .nav_responsive {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 0.6em;
-    margin-top: 40px;
+
+  .middle {
+    margin-top: 30%;
+    margin-right:0;
+    margin-left:4%;
   }
-  .nav.nav_hebergements:active {
-    border-top: none;
-    border-bottom: 2px solid grey!important;
-    padding-bottom: 20px!important;
-  }
-  .nav.nav_activites:active {
-    border-top: none;
-    border-bottom: 2px solid grey!important;
-    padding-bottom: 20px!important;
-  }
-  .nav a {
-    border-top: none;
-    color: black!important;
-    outline: none!important;
-    text-decoration: none!important;
-  }
-  .nav a:hover {
-    border-top: none;
-    border-bottom: 2px solid #0065FC!important;
-    padding-bottom: 20px!important;
-    color: #0065FC!important;
-  }
-  .nav a:visited {
-    border-top: none;
-    text-decoration: none!important;
-    color: black;
-  }
-  .nav a:focus {
-    border-top: none;
-    color: #0065FC!important;
-  }
-  .nav a:active {
-    border-top: none;
-    border-bottom: 2px solid #0065FC!important;
-    padding-bottom: 20px!important;
-    color: #0065FC!important;
-  }
+  
   /*Main*/
   /*Fonction recherche + Filtres*/
   #nature {
@@ -151,12 +171,14 @@
   input[type=text]:focus {
     border-color: #0065FC;
   }
-  #rechercher {
-    display: none;
+
+  form button[type="submit"] span { 
+    display:none;
   }
-  .loupe {
+
+  form button[type="submit"] {
     display: inline-block;
-    padding: 12px 14px 12px 14px;
+    padding: 12px 13px 12px 13px;
     border: 0;
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
@@ -171,21 +193,21 @@
     top: -0.1em;
   }
   @media screen and (max-width: 320px) {
-    .loupe {
+    form button[type="submit"] {
       position: relative;
       left: 14.5em;
       top: -2.6em;
     }
   }
   @media all and (min-width: 321px) and (max-width: 361px) {
-    .loupe {
+    form button[type="submit"] {
       position: relative;
       left: 15.9em;
       top: -2.6em;
     }
   }
   @media all and (min-width: 362px) and (max-width: 374px) {
-    .loupe {
+    form button[type="submit"] {
       padding: 12px 14px 12px 14px;
       position: relative;
       left: 16.5em;
@@ -193,7 +215,7 @@
     }
   }
   @media all and (min-width: 375px) and (max-width: 400px) {
-    .loupe {
+    form button[type="submit"] {
       padding: 12px 14px 12px 14px;
       position: relative;
       left: -1em;
@@ -358,8 +380,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 3%;
-    padding-left: auto;
-    padding-right: auto;
   }
   .enfantheber {
     width: 100%;
@@ -509,10 +529,10 @@
   .pied {
     font-size: 0.5em;
     margin-top: 45px;
-    min-height: 550px;
+    min-height: 600px;
+    min-width:100%;
     background-color: #F2F2F2;
-    padding-left: 25px;
-    padding-top: 25px;
+    padding: 25px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;

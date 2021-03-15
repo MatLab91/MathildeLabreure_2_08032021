@@ -1,4 +1,4 @@
-/* Valable pour toute la page*/
+/*Valable pour toute la page*/
 
 body {
   font-family: 'Raleway', sans-serif, Verdana;
@@ -9,9 +9,11 @@ body {
   margin: 0;
 }
 
+@media all and (min-width: 481px) {
 .middle {
   margin: 5%;
   margin-right: 4%;
+}
 }
 
 h1 {
@@ -32,10 +34,6 @@ h3 {
 }
 
 /*Mise en page header logo+nav*/
-
-.header_responsive {
-  display: none;
-}
 
 header {
   margin-left: 5%;
@@ -58,13 +56,9 @@ header {
 
 .flex-parent {
   height: 70px;
-  /*border: 1px solid #000;
-  background-color: red;*/
 }
 
 .flex-child {
-  /*background-color: grey;
-  color: white;*/
   text-align: center;
 }
 
@@ -86,6 +80,7 @@ nav a {
   color: black;
 }
 
+@media all and (min-width: 481px) {
 nav a:hover {
   border-top: 2px solid #0065FC;
   border-bottom: none!important;
@@ -104,6 +99,7 @@ nav a:focus {
 
 nav a:active {
   color: #0065FC!important;
+}
 }
 
 .inscrire a {
@@ -162,16 +158,13 @@ input[type=text]:focus {
   border-color: #0065FC;
 }
 
-.fa-search {
+form button[type="submit"] .fa-search {
+  display: inline-block;
+}
+form button[type="submit"] span {
   display: none;
 }
-.loupe {
-  display: none;
-}
-
-/*input[type=submit]*/
-
-#rechercher {
+form button[type="submit"] {
   padding: 11px 12px 11px 12px;
   border: 0;
   cursor: pointer;
@@ -185,6 +178,10 @@ input[type=text]:focus {
   position: relative;
   left: -3px;
   top: -1px;
+}
+
+form button .fa-search {
+  display:none;
 }
 
 
