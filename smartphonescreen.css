@@ -19,6 +19,11 @@
   h2 {
     font-weight: 600;
   }
+  .middle {
+    margin-top: 30%;
+    margin-right:0!important;
+    margin-left:4%;
+  }
 
 
   /*Header + menu de navigation*/
@@ -134,11 +139,7 @@
     text-decoration: none;
   }
 
-  .middle {
-    margin-top: 30%;
-    margin-right:-30px;
-    margin-left:4%;
-  }
+
   
   /*Main*/
   /*Fonction recherche + Filtres*/
@@ -172,6 +173,9 @@
     border-color: #0065FC;
   }
 
+  form button[type="submit"] .fa-search {
+    display: inline-block;
+  }
   form button[type="submit"] span { 
     display:none;
   }
@@ -192,26 +196,33 @@
     left: -1em;
     top: -0.1em;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 319px) {
     form button[type="submit"] {
       position: relative;
-      left: 14.5em;
-      top: -2.6em;
+      left: 14.4em;
+      top: -2.57em;
     }
   }
-  @media all and (min-width: 321px) and (max-width: 361px) {
+  @media screen and (min-width: 320px) and (max-width: 346px) {
+    form button[type="submit"] {
+    position: relative;
+    left: 14.4em;
+    top: -2.65em;
+    }
+  }
+  @media screen and (min-width: 346px) and (max-width: 347px) {
     form button[type="submit"] {
       position: relative;
-      left: 15.9em;
-      top: -2.6em;
-    }
+      left: -1.2em;
+      top: -0.15em;
+      }
   }
-  @media all and (min-width: 362px) and (max-width: 374px) {
+  @media all and (min-width: 34Ypx) and (max-width: 374px) {
     form button[type="submit"] {
       padding: 12px 14px 12px 14px;
       position: relative;
-      left: 16.5em;
-      top: -2.65em;
+      left: -1.1em;
+      top: -0.15em;
     }
   }
   @media all and (min-width: 375px) and (max-width: 400px) {
@@ -275,6 +286,10 @@
     margin-right: 10px;
   }
   /*Les plus populaires*/
+  .conteneur-grand-parent {
+    flex-direction: column;
+    align-items: center;
+  }
   .titrecontainer {
     font-size: 0.7em;
   }
@@ -291,10 +306,10 @@
     order: 1;
     width: 106%;
     margin-left: -25px;
-    margin-right: -17px;
     margin-top: 30px;
     margin-bottom: 10px;
     border-radius: 0;
+    padding-left: 3%;
   }
   .enfantpopu {
     width: 90%;
@@ -375,6 +390,8 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-basis: 100%;
+    align-self: flex-start;
+
     width: 100%;
     background-color: white;
     margin-top: 10px;
@@ -421,29 +438,34 @@
     object-position: 1px -50px;
   }
   .enfantheber:nth-of-type(2) img {
-    object-position: 1px -51px;
+    object-position: 1px -79px;
   }
   .enfantheber:nth-of-type(3) img {
-    object-position: 1px -48px;
+    object-position: 1px -99px;
   }
   .enfantheber:nth-of-type(4) img {
-    object-position: 1px -92px;
+    object-position: 1px -143px;
   }
   .enfantheber:nth-of-type(5) img {
     object-position: 1px -43px;
   }
   .enfantheber:nth-of-type(6) img {
-    object-position: 0px -191px;
+    object-position: 0px -242px;
   }
+  .afficher {
+    font-size: 0.6em;
+  }
+
+
   /*Activités*/
   #activites {
     font-size: 0.7em;
   }
   .flexdad {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
     height: 1180px;
     width: 100%;
     margin-top: 20px;
@@ -452,11 +474,17 @@
   }
   .flexson {
     border-radius: 10%;
-    width: 100%;
-    height: 180px;
     box-shadow: 0px 2px 2px #F2F2F2;
     overflow: hidden;
     position: relative;
+
+    flex-basis: 15%!important;
+    width: 100%!important;
+    margin-bottom:24px;
+  }
+  .flexson:nth-of-type(6) {
+    flex-basis: 14%!important;
+    margin-bottom: 0;
   }
   .texteacti {
     color: black;
@@ -472,67 +500,49 @@
   }
   .flexson img {
     object-fit: contain;
+    width:100%;
+    height: auto;
   }
-  .flexson:nth-of-type(1) {
-    flex-basis: 100%;
-    margin-bottom: 24px;
-  }
+  
+  
   .flexson:nth-of-type(1) img {
     max-width: 100%;
     object-position: 0px 0px;
   }
-  .flexson:nth-of-type(2) {
-    flex-basis: 100%;
-    margin-bottom: 24px;
-  }
   .flexson:nth-of-type(2) img {
     max-width: 100%;
-    object-position: -4px -166px;
-  }
-  .flexson:nth-of-type(3) {
-    flex-basis: 100%;
-    margin-bottom: 24px;
+    object-position: 0px -166px;
   }
   .flexson:nth-of-type(3) img {
     max-width: 100%;
-    object-position: -4px -23px;
-  }
-  .flexson:nth-of-type(4) {
-    flex-basis: 100%;
-    margin-bottom: 24px;
+    object-position: 0px -23px;
   }
   .flexson:nth-of-type(4) img {
     max-width: 130%;
-    object-position: -97px -110px;
-  }
-  .flexson:nth-of-type(5) {
-    flex-basis: 100%;
-    margin-bottom: 24px;
+    object-position: 0px -80px;
   }
   .flexson:nth-of-type(5) img {
     max-width: 100%;
     object-position: 0px 0px;
   }
-  .flexson:nth-of-type(6) {
-    flex-basis: 100%;
-    margin-bottom: 24px;
-  }
   .flexson:nth-of-type(6) img {
     max-width: 100%;
     object-position: 0px -32px;
   }
-  .afficher {
-    font-size: 0.6em;
-  }
+  
+
 
   /*Footer*/
   .pied {
     font-size: 0.5em;
     margin-top: 45px;
+    margin-right:0;
+
     min-height: 600px;
-    min-width:100%;
+    width:100%;
     background-color: #F2F2F2;
-    padding: 25px;
+    padding-left: 25px;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;

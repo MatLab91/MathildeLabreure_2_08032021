@@ -159,10 +159,10 @@ input[type=text]:focus {
 }
 
 form button[type="submit"] .fa-search {
-  display: inline-block;
+  display: none;
 }
 form button[type="submit"] span {
-  display: none;
+  display: inline-block;
 }
 form button[type="submit"] {
   padding: 11px 12px 11px 12px;
@@ -178,10 +178,6 @@ form button[type="submit"] {
   position: relative;
   left: -3px;
   top: -1px;
-}
-
-form button .fa-search {
-  display:none;
 }
 
 
@@ -465,7 +461,7 @@ form button .fa-search {
   color: black;
   background-color: white;
   font-size: 10px;
-  width: 231px;
+  width: 100%;
   padding: 11px 0px 5px 10px;
   position: absolute;
   bottom: 0px;
@@ -587,41 +583,98 @@ ul {
   color: black;
 }
 
+/*Responsive pour grands écrans Desktop*/
+@media all and (min-width:1290px) {
+
+  .conteneur-parent.gauche {
+    justify-content: space-between;
+    flex-basis: 62%;
+    padding: 2%;
+    padding-bottom: 0;
+  }
+  .enfantheber {
+    width: 15vw;
+    height: 24%;
+  }
+  .texteheber {
+    width:100%;
+    font-size: 10px;
+    height: 35%;
+  }
+  .conteneur-parent.droit {
+    flex-basis: 23%;
+    justify-content: space-around;
+  }
+  .enfantpopu {
+    width: 18vw;
+    height: 15%;
+    margin: auto;
+  }
+  .textepopu {
+    width: 52%;
+    height: 100%;
+    line-height: 12px;
+  }
+  .flexson {
+    width: 20vw!important;
+  }
+  .flexson:nth-of-type(2) img {
+    object-position: -4px -175px!important;
+  }
+}
+@media (min-width:1760px) {
+.flexson:nth-of-type(1) img {
+  object-position: -104px -77px;
+}
+.flexson:nth-of-type(2) img {
+  width: 111%;
+  object-position: 0px -205px!important;
+}
+.flexson:nth-of-type(3) img {
+  object-position: -4px -73px;
+}
+.flexson:nth-of-type(4) img {
+  object-position: -104px -130px;
+}
+.flexson:nth-of-type(5) img {
+  object-position: 0px -26px;
+}
+.flexson:nth-of-type(6) img {
+  object-position: 0px -78px;
+}
+}
+
 /*Responsive pour tablettes*/
 
 @media all and (min-width: 481px) and (max-width: 1279px) {
-  /*header*/
+  
+  /*Header*/
+  .flex-child.logo img {
+    max-width: 198%;
+  }
   nav a {
     margin: 5px;
   }
+  .conteneur-grand-parent {
+    flex-direction: column;
+    align-items:center;
+  }
+  .conteneur-parent.droit {
+    margin-top: 15vh;
+  }
+
   /* Hébergements */
   .conteneur-parent.gauche {
-    flex-basis: 94%;
+    flex-basis: 100%;
+    justify-content: space-around;
   }
   .enfantheber {
-    width: 270px;
+    width: 29%;
   }
   .texteheber {
     width: 100%;
   }
-  .enfantheber:nth-of-type(1) img {
-    object-position: 1px -50px;
-  }
-  .enfantheber:nth-of-type(2) img {
-    object-position: 1px -51px;
-  }
-  .enfantheber:nth-of-type(3) img {
-    object-position: 1px -48px;
-  }
-  .enfantheber:nth-of-type(4) img {
-    object-position: 1px -92px;
-  }
-  .enfantheber:nth-of-type(5) img {
-    object-position: 1px -43px;
-  }
-  .enfantheber:nth-of-type(6) img {
-    object-position: 0px -191px;
-  }
+  
   /*Les plus populaires*/
   .conteneur-parent.droit {
     margin: auto;
@@ -636,11 +689,54 @@ ul {
   .textepopu {
     width: 50%;
   }
+  
+}
+
+@media (min-width: 620px) and (max-width:850px) {
+  .enfantheber {
+    width: 40%;
+    height: 150px;
+  }
+  .texteheber {
+    width: 100%;
+    height: 34%;
+  }
+}
+@media (max-width:619px) {
+  .enfantheber {
+    width: 100%;
+  }
+  .texteheber {
+    width: 100%;
+    height: 34%;
+  }
+  .enfantheber:nth-of-type(1) img {
+    object-position: 1px -50px;
+  }
+  .enfantheber:nth-of-type(2) img {
+    object-position: 1px -170px;
+  }
+  .enfantheber:nth-of-type(3) img {
+    object-position: 1px -138px;
+  }
+  .enfantheber:nth-of-type(4) img {
+    object-position: 1px -232px;
+  }
+  .enfantheber:nth-of-type(5) img {
+    object-position: 1px -93px;
+  }
+  .enfantheber:nth-of-type(6) img {
+    object-position: 0px -302px;
+  }
+}
+
+@media (min-width: 481px) and (max-width:1100px) {
   /*Activités*/
   .flexdad {
     display: flex;
     flex-direction: row;
     height: auto;
+    justify-content: center;
   }
   .flexson {
     height: 160px;
@@ -660,8 +756,9 @@ ul {
     flex-basis: 45%;
   }
   .flexson:nth-of-type(2) img {
-    max-width: 100%;
-    object-position: 0px -186px;
+    width:100%;
+    height:auto;
+    object-position: 0px -266px;
   }
   .flexson:nth-of-type(3) {
     flex-basis: 45%;
@@ -692,10 +789,18 @@ ul {
     object-position: 0px -28px;
   }
 }
-
-@media all and (min-width: 1023px) and (max-width: 1279px) {
+@media (min-width: 481px) and (max-width:960px) {
   .flexson:nth-of-type(2) img {
-    min-width: 100%!important;
-    object-position: -2px -246px!important;
+    width:100%;
+    height:auto;
+    object-position: 0px -76px;
   }
+  .flexson:nth-of-type(4) img {
+    max-width: 130%;
+    object-position: -1px -13px;
+  }
+  .flexson:nth-of-type(3) img {
+    width: 130%;
+    object-position: 0px -3px;
+}
 }
