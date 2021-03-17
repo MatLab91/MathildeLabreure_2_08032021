@@ -305,7 +305,7 @@
     display: flex;
     order: 1;
     width: 106%;
-    margin-left: -25px;
+    margin-left: -4%;
     margin-top: 30px;
     margin-bottom: 10px;
     border-radius: 0;
@@ -397,7 +397,7 @@
     background-color: white;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 1.25%;
+    padding: 4.35%;
   }
   .enfantheber {
     width: 100%;
@@ -472,7 +472,7 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.25%;
+    padding: 4.45%;
   }
   .flexson {
     border-radius: 10%;
@@ -543,8 +543,8 @@
     min-height: 600px;
     width:100%;
     background-color: #F2F2F2;
-    padding-left: 25px;
-    padding-right: 2.5%;
+    padding-left: 9.5%;
+    padding-right: 3.5%;
 
     display: flex;
     flex-flow: column nowrap;
@@ -564,5 +564,11 @@
   }
   .liste h3 {
     font-size: 1.1em;
+  }
+}
+@media (min-width:370px) and (max-width:480px) {
+  .flexson:nth-of-type(2) img {
+    width:100%;
+    object-position: 0px -240px;
   }
 }

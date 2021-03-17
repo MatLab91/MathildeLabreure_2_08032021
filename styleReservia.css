@@ -804,3 +804,10 @@ ul {
     object-position: 0px -3px;
 }
 }
+
+@media (min-width:560px) and (max-width:960px) {
+  .flexson:nth-of-type(2) img {
+    width:100%;
+    object-position: 0px -162px;
+  }
+}
