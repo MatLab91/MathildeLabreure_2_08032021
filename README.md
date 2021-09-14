@@ -1,5 +1,3 @@
-# MathildeLabreure_2_08032021
-
 # OpenClassrooms P2 - Site de réservation de voyage
 2ème projet de la formation de développeur web de OpenClassrooms
 
